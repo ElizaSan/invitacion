@@ -1,0 +1,117 @@
+/* ==========================================================
+   BASE — lo común a todas las secciones y páginas.
+   Usa solo variables del tema: aquí no se escriben colores.
+   ========================================================== */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-texto);
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--fuente-titulos);
+  color: var(--color-principal);
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+h1 { font-size: 3.5rem; }
+h2 { font-size: 2.6rem; }
+h3 { font-size: 2rem; }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---------- Secciones ---------- */
+.seccion {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem;
+}
+
+/* Línea fina entre secciones */
+.seccion + .seccion {
+  border-top: 1px solid var(--color-borde);
+}
+
+/* ---------- Botones ---------- */
+.boton,
+button[type="submit"] {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: var(--radio);
+  background: var(--color-principal);
+  color: var(--color-sobre-principal);
+  font: inherit;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.boton:hover,
+button[type="submit"]:hover { opacity: 0.85; }
+
+button:disabled { opacity: 0.5; cursor: wait; }
+
+.boton.secundario {
+  background: transparent;
+  color: var(--color-principal);
+  border: 1px solid var(--color-principal);
+}
+
+/* ---------- Formularios ---------- */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.formulario input[type="text"],
+.formulario textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  background: white;
+  font: inherit;
+  font-size: 1rem;     /* 16px: evita el zoom automático en iPhone */
+}
+
+.formulario textarea {
+  min-height: 6rem;
+  resize: vertical;
+}
+
+.formulario button[type="submit"] {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* ---------- Pie de página ---------- */
+.pie {
+  padding: 2.5rem 1rem;
+  font-family: var(--fuente-titulos);
+  font-size: 2rem;
+  color: var(--color-principal);
+}
+
+.pie p { margin: 0; }
+
+/* ---------- Escritorio ---------- */
+@media (min-width: 768px) {
+  h1 { font-size: 5rem; }
+  h2 { font-size: 3rem; }
+}

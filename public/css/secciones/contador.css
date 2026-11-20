@@ -1,0 +1,42 @@
+/* ==========================================================
+   SECCIÓN: CONTADOR
+   ========================================================== */
+.contador-cajas {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.contador-caja {
+  display: flex;
+  flex-direction: column;
+  min-width: 4.5rem;
+  padding: 0.8rem 0.4rem;
+  background: var(--color-suave);
+  border-radius: var(--radio);
+}
+
+.contador-numero {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--color-principal);
+  font-variant-numeric: tabular-nums;   /* todos los dígitos del mismo ancho */
+}
+
+.contador-etiqueta {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.contador-mensaje {
+  font-family: var(--fuente-titulos);
+  font-size: 2.5rem;
+  color: var(--color-principal);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .contador-caja { min-width: 6rem; }
+  .contador-numero { font-size: 2.8rem; }
+}

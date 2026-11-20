@@ -1,0 +1,16 @@
+/* ==========================================================
+   TEMA: ESTÁNDAR
+   Para crear un tema nuevo, copia este archivo con otro nombre
+   (por ejemplo temas/romantico.css), cambia los valores y
+   enlázalo en el HTML en lugar de este. No toques styles.css.
+   ========================================================== */
+:root {
+  --color-principal: #8c7355;   /* dorado tostado: títulos, botones */
+  --color-fondo: #fffdf9;       /* blanco cálido */
+  --color-texto: #2f2f2f;
+  --color-suave: #f3eee6;       /* fondo de tarjetas y cajas */
+  --color-borde: #e2d9cc;
+  --fuente-titulos: 'Great Vibes', cursive;
+  --fuente-texto: 'Lato', sans-serif;
+  --radio: 12px;                /* esquinas redondeadas */
+}

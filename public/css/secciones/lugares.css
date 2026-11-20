@@ -1,0 +1,48 @@
+/* ==========================================================
+   SECCIÓN: LUGARES (ceremonia y recepción)
+   ========================================================== */
+.lugares-lista {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.lugar {
+  display: flex;               /* columna flexible para alinear las tarjetas */
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background: var(--color-suave);
+  border-radius: var(--radio);
+}
+
+.lugar-tipo { margin-bottom: 0.25rem; }
+
+.lugar-hora {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.lugar-nombre {
+  margin: 0.75rem 0 0;
+  font-weight: 400;
+}
+
+.lugar-direccion {
+  font-style: normal;     /* <address> viene en cursiva por defecto */
+  font-size: 0.95rem;
+  margin: 0.25rem 0 1rem;
+  flex-grow: 1;   /* absorbe el espacio sobrante: mapas y botones quedan alineados */
+}
+
+.lugar-mapa {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 0;
+  border-radius: var(--radio);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .lugares-lista { grid-template-columns: 1fr 1fr; }
+}

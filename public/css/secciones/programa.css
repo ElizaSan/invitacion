@@ -1,0 +1,27 @@
+/* ==========================================================
+   SECCIÓN: PROGRAMA
+   ========================================================== */
+.programa-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 1.5rem;
+  max-width: 420px;
+  text-align: left;
+}
+
+.programa-item {
+  display: flex;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.programa-item time {
+  flex: 0 0 5rem;            /* columna de horas de ancho fijo */
+  color: var(--color-principal);
+  font-weight: 400;
+}
+
+.programa-vestimenta {
+  font-size: 0.95rem;
+}

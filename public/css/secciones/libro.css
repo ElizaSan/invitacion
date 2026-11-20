@@ -1,0 +1,27 @@
+/* ==========================================================
+   SECCIÓN: LIBRO DE MENSAJES
+   ========================================================== */
+.libro-mensajes {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.libro-mensaje {
+  padding: 1rem 1.2rem;
+  background: var(--color-suave);
+  border-left: 4px solid var(--color-principal);
+  border-radius: var(--radio);
+}
+
+.libro-texto {
+  margin: 0 0 0.5rem;
+  white-space: pre-line;     /* respeta los saltos de línea del mensaje */
+}
+
+.libro-autor {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-principal);
+}

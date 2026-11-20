@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novio1 &amp; Novio2 — Nuestra boda</title>
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- CSS en este orden: 1) tema  2) base  3) una hoja por sección -->
+  <link rel="stylesheet" href="css/temas/estandar.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/secciones/portada.css">
+  <link rel="stylesheet" href="css/secciones/contador.css">
+  <link rel="stylesheet" href="css/secciones/lugares.css">
+  <link rel="stylesheet" href="css/secciones/carrusel.css">
+  <link rel="stylesheet" href="css/secciones/programa.css">
+  <link rel="stylesheet" href="css/secciones/libro.css">
+  <link rel="stylesheet" href="css/secciones/confirmar.css">
+
+  <script src="js/contador.js" defer></script>
+  <script src="js/carrusel.js" defer></script>
+  <script src="js/libro.js" defer></script>
+  <script src="js/confirmar.js" defer></script>
+</head>
+<body>
+
+  <!-- ======================= PORTADA (siempre incluida) ======================= -->
+  <header id="portada" class="seccion-portada">
+    <p class="portada-intro">Nos casamos</p>
+    <div class="color-ficha">
+      <h1 class="portada-nombres">Novio1 &amp; Novio2</h1>
+    </div>
+    <p class="portada-fecha">
+      <time datetime="2028-03-03T15:00">3 · marzo · 2028</time>
+    </p>
+  </header>
+
+  <main>
+
+    <!-- ======================= CONTADOR ======================= -->
+    <section id="contador" class="seccion">
+      <h2>Faltan</h2>
+      <div class="contador-cajas">
+        <div class="contador-caja">
+          <span id="contador-dias" class="contador-numero">--</span>
+          <span class="contador-etiqueta">días</span>
+        </div>
+        <div class="contador-caja">
+          <span id="contador-horas" class="contador-numero">--</span>
+          <span class="contador-etiqueta">horas</span>
+        </div>
+        <div class="contador-caja">
+          <span id="contador-minutos" class="contador-numero">--</span>
+          <span class="contador-etiqueta">min</span>
+        </div>
+        <div class="contador-caja">
+          <span id="contador-segundos" class="contador-numero">--</span>
+          <span class="contador-etiqueta">seg</span>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== FIN CONTADOR ===================== -->
+
+
+    <!-- ======================= LUGARES ======================= -->
+    <section id="lugares" class="seccion">
+      <h2>¿Dónde y cuándo?</h2>
+      <div class="lugares-lista">
+
+        <article class="lugar">
+          <h3 class="lugar-tipo">Ceremonia</h3>
+          <p class="lugar-nombre">Nombre de la iglesia</p>
+          <p class="lugar-hora"><time datetime="15:00">3:00 pm</time></p>
+          
+          <address class="lugar-direccion">
+            Dirección de la iglesia: Calle, número, colonia, ciudad
+          </address>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4739065355193!2d-98.20090402397497!3d19.042890382154752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc6280aa50887%3A0x5b21261581c701c5!2sCatedral%20de%20Nuestra%20Se%C3%B1ora%20de%20la%20Inmaculada%20Concepci%C3%B3n%20de%20Puebla!5e0!3m2!1ses!2smx!4v1795149560514!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"> title="Mapa de la ceremonia"></iframe>
+          <a class="boton" target="_blank" rel="noopener"
+            href="https://maps.app.goo.gl/SXZGvALBK8d7o23L7">Cómo llegar</a>
+        </article>
+
+        <article class="lugar">
+          <h3 class="lugar-tipo">Recepción</h3>
+          <p class="lugar-nombre">Nombre del salón</p>
+          <p class="lugar-hora"><time datetime="17:00">5:00 pm</time></p>
+          <address class="lugar-direccion">
+            Dirección de la recepción: Calle, número, colonia, ciudad
+          </address>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d962108.788050289!2d-102.05852480544141!3d19.617143575632372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842d119ab8748f43%3A0x3e46ffc1417751e9!2sSal%C3%B3n%20de%20fiesta!5e0!3m2!1ses!2smx!4v1795149991048!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"> title="Mapa de la recepción"></iframe>
+          <a class="boton" target="_blank" rel="noopener"
+            href="https://maps.app.goo.gl/CrQ8LehuaUYAep248">Cómo llegar</a>
+        </article>
+
+      </div>
+    </section>
+    <!-- ===================== FIN LUGARES ===================== -->
+
+
+    <!-- ======================= CARRUSEL DE FOTOS ======================= -->
+    <section id="carrusel" class="seccion">
+      <h2>Nuestra historia</h2>
+      <div class="carrusel">
+        <button type="button" class="carrusel-flecha carrusel-anterior" aria-label="Foto anterior">‹</button>
+        <div class="carrusel-fotos">
+          <img src="img/novios1.jpeg" alt="Novios en el altar">
+          <img src="img/novios2.jpg" alt="Novia">
+          <img src="img/novios3.jpg" alt="Novio">
+          <img src="img/novios4.jpg" alt="Novios en su sesión de fotos">
+        </div>
+        <button type="button" class="carrusel-flecha carrusel-siguiente" aria-label="Foto siguiente">›</button>
+      </div>
+      <!-- Este enlace se quita si el cliente no contrata la galería extendida -->
+      <a class="boton" href="galeria.html">Ver galería completa</a>
+    </section>
+    <!-- ===================== FIN CARRUSEL ===================== -->
+
+
+    <!-- ======================= PROGRAMA ======================= -->
+    <section id="programa" class="seccion">
+      <h2>Programa</h2>
+      <ol class="programa-lista">
+        <li class="programa-item"><time datetime="15:00">3:00 pm</time> <span>Ceremonia religiosa</span></li>
+        <li class="programa-item"><time datetime="17:00">5:00 pm</time> <span>Recepción y cóctel</span></li>
+        <li class="programa-item"><time datetime="18:30">6:30 pm</time> <span>Entrada de los novios</span></li>
+        <li class="programa-item"><time datetime="19:00">7:00 pm</time> <span>Cena</span></li>
+        <li class="programa-item"><time datetime="20:30">8:30 pm</time> <span>Primer baile</span></li>
+        <li class="programa-item"><time datetime="21:00">9:00 pm</time> <span>¡A bailar!</span></li>
+      </ol>
+      <p class="programa-vestimenta"><strong>Código de vestimenta:</strong> formal.</p>
+    </section>
+    <!-- ===================== FIN PROGRAMA ===================== -->
+
+
+    <!-- ======================= LIBRO DE MENSAJES ======================= -->
+    <section id="libro" class="seccion">
+      <h2>Libro de mensajes</h2>
+      <p>Déjanos unas palabras; las guardaremos para siempre.</p>
+      <form id="libro-form" class="formulario">
+        <label for="libro-nombre">Tu nombre</label>
+        <input type="text" id="libro-nombre" name="nombre" maxlength="60" required>
+
+        <label for="libro-mensaje">Tu mensaje</label>
+        <textarea id="libro-mensaje" name="mensaje" maxlength="300" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+      <!-- Aquí el JS dibujará los mensajes -->
+      <div id="libro-mensajes" class="libro-mensajes"></div>
+    </section>
+    <!-- ===================== FIN LIBRO ===================== -->
+
+
+    <!-- ======================= MESA DE REGALOS ======================= -->
+    <section id="regalos" class="seccion">
+      <h2>Mesa de regalos</h2>
+      <p>Tu presencia es nuestro mejor regalo. Si deseas obsequiarnos algo, aquí tienes algunas ideas.</p>
+      <a class="boton" href="regalos.html">Ver mesa de regalos</a>
+    </section>
+    <!-- ===================== FIN REGALOS ===================== -->
+
+  </main>
+
+      <!-- ======================= CONFIRMAR ASISTENCIA ======================= -->
+    <section id="confirmar" class="seccion">
+      <h2>Confirma tu asistencia</h2>
+
+      <!-- ESTADO 1: invitación personal (se muestra si el enlace trae un código válido) -->
+      <div id="confirmar-personal" class="confirmar-personal">
+        <p class="confirmar-saludo">¡Hola, <strong id="confirmar-nombre">Juan Pérez</strong>!</p>
+        <p class="confirmar-limite">
+          Puedes confirmar o cambiar tu respuesta hasta el
+          <time id="confirmar-fecha-limite" datetime="2028-02-01">1 de febrero de 2028</time>.
+        </p>
+
+        <form id="confirmar-form" class="formulario">
+
+          <!-- Una tarjeta por persona: el adulto y los niños a su cargo.
+               El JS las generará con los datos que mande el servidor. -->
+          <fieldset class="persona" data-id="12">
+            <legend class="persona-nombre">Juan Pérez</legend>
+            <label class="persona-opcion">
+              <input type="radio" name="respuesta-12" value="si" required> Asistiré
+            </label>
+            <label class="persona-opcion">
+              <input type="radio" name="respuesta-12" value="no"> No podré ir
+            </label>
+          </fieldset>
+
+          <fieldset class="persona persona-nino" data-id="13">
+            <legend class="persona-nombre">Sofía Pérez <span class="persona-etiqueta">(niña)</span></legend>
+            <label class="persona-opcion">
+              <input type="radio" name="respuesta-13" value="si" required> Asistirá
+            </label>
+            <label class="persona-opcion">
+              <input type="radio" name="respuesta-13" value="no"> No podrá ir
+            </label>
+          </fieldset>
+
+          <button type="submit">Enviar respuesta</button>
+        </form>
+      </div>
+
+      <!-- ESTADO 2: respuesta enviada -->
+      <div id="confirmar-gracias" class="confirmar-mensaje" hidden>
+        <p>¡Gracias! Recibimos tu respuesta.</p>
+        <p>Si cambias de planes, abre de nuevo este enlace antes de la fecha límite.</p>
+      </div>
+
+      <!-- ESTADO 3: ya pasó la fecha límite -->
+      <div id="confirmar-cerrado" class="confirmar-mensaje" hidden>
+        <p>El periodo para confirmar terminó.</p>
+        <p>Tu respuesta registrada: <strong id="confirmar-respuesta-final">Asistiré</strong></p>
+      </div>
+
+      <!-- ESTADO 4: entraron sin código personal -->
+      <div id="confirmar-sin-codigo" class="confirmar-mensaje" hidden>
+        <p>Para confirmar, abre el enlace personal que recibiste por mensaje.</p>
+      </div>
+    </section>
+    <!-- ===================== FIN CONFIRMAR ===================== -->
+
+  <footer class="pie">
+    <p>¡Te esperamos!</p>
+  </footer>
+
+</body>
+</html>

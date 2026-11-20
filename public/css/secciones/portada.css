@@ -1,0 +1,36 @@
+/* ==========================================================
+   SECCIÓN: PORTADA
+   ========================================================== */
+.seccion-portada {
+  min-height: 100svh;            /* toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+}
+
+.portada-intro {
+  margin: 0;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.color-ficha {
+  padding: 2rem 2.5rem;
+  background: var(--color-suave);
+  border-radius: var(--radio);
+  outline: 1px solid var(--color-principal);   /* marco fino separado */
+  outline-offset: 8px;
+}
+
+.portada-nombres { margin: 0; }
+
+.portada-fecha {
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}

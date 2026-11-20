@@ -1,0 +1,90 @@
+/* ==========================================================
+   SECCIÓN: CONFIRMAR ASISTENCIA
+   ========================================================== */
+.confirmar-saludo { font-size: 1.2rem; }
+
+.confirmar-limite { font-size: 0.95rem; }
+
+/* Tarjeta de cada persona */
+.persona {
+  display: grid;
+  grid-template-columns: 1fr 1fr;   /* dos botones lado a lado */
+  gap: 0.6rem;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio);
+  background: var(--color-suave);
+}
+
+.persona-nombre {
+  grid-column: 1 / -1;     /* el nombre ocupa toda la fila */
+  padding: 0;
+  margin-bottom: 0.4rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  float: left;             /* truco: hace que <legend> obedezca al grid */
+  width: 100%;
+  text-align: center;
+}
+
+.persona-etiqueta {
+  font-size: 0.85rem;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+/* Cada opción se ve como un botón grande */
+.persona-opcion {
+  display: block;
+  padding: 0.8rem 0.5rem;
+  border: 1px solid var(--color-principal);
+  border-radius: var(--radio);
+  background: white;
+  color: var(--color-principal);
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* El círculo del radio se oculta visualmente,
+   pero sigue existiendo (accesible y funcional) */
+.persona-opcion input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+/* :has() = "la opción que CONTIENE un radio marcado" */
+.persona-opcion:has(input:checked) {
+  background: var(--color-principal);
+  color: var(--color-sobre-principal);
+}
+
+/* Contorno visible al navegar con teclado */
+.persona-opcion:has(input:focus-visible) {
+  outline: 2px solid var(--color-principal);
+  outline-offset: 2px;
+}
+
+/* Mensajes de gracias / cerrado / sin código */
+.confirmar-mensaje {
+  padding: 1.5rem;
+  background: var(--color-suave);
+  border-radius: var(--radio);
+}
+
+.confirmar-mensaje p:first-child {
+  font-family: var(--fuente-titulos);
+  font-size: 2rem;
+  color: var(--color-principal);
+  margin: 0 0 0.5rem;
+}
+
+.confirmar-resumen {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

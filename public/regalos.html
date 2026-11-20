@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesa de regalos — Novio1 &amp; Novio2</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/temas/estandar.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="js/regalos.js" defer></script>
+</head>
+<body>
+
+
+  <main>
+    <section class="pagina">
+      <h1>Mesa de regalos</h1>
+      <p>Marca la casilla cuando compres un regalo, así nadie lo repite.</p>
+
+      <div class="regalos">
+        <!-- Cada regalo necesita un data-id ÚNICO (sin espacios ni acentos) -->
+
+        <article class="regalo" data-id="bateria-cocina">
+          <!-- Temporal: emoji. Después: <img src="img/regalos/bateria.jpg" alt="..."> -->
+          <div class="imagen">🍳</div>
+          <h3>Batería de cocina</h3>
+          <p class="tienda">Liverpool</p>
+          <a class="boton secundario" href="#" target="_blank" rel="noopener">Ver en tienda</a>
+          <label class="check"><input type="checkbox"> Ya lo compré</label>
+        </article>
+
+        <article class="regalo" data-id="juego-sabanas">
+          <div class="imagen">🛏️</div>
+          <h3>Juego de sábanas</h3>
+          <p class="tienda">Amazon</p>
+          <a class="boton secundario" href="#" target="_blank" rel="noopener">Ver en tienda</a>
+          <label class="check"><input type="checkbox"> Ya lo compré</label>
+        </article>
+
+        <article class="regalo" data-id="cafetera">
+          <div class="imagen">☕</div>
+          <h3>Cafetera</h3>
+          <p class="tienda">Liverpool</p>
+          <a class="boton secundario" href="#" target="_blank" rel="noopener">Ver en tienda</a>
+          <label class="check"><input type="checkbox"> Ya lo compré</label>
+        </article>
+
+        <article class="regalo" data-id="vajilla">
+          <div class="imagen">🍽️</div>
+          <h3>Vajilla para 8 personas</h3>
+          <p class="tienda">Palacio de Hierro</p>
+          <a class="boton secundario" href="#" target="_blank" rel="noopener">Ver en tienda</a>
+          <label class="check"><input type="checkbox"> Ya lo compré</label>
+        </article>
+
+        <article class="regalo" data-id="licuadora">
+          <div class="imagen">🥤</div>
+          <h3>Licuadora</h3>
+          <p class="tienda">Amazon</p>
+          <a class="boton secundario" href="#" target="_blank" rel="noopener">Ver en tienda</a>
+          <label class="check"><input type="checkbox"> Ya lo compré</label>
+        </article>
+
+        <article class="regalo" data-id="luna-miel">
+          <div class="imagen">✈️</div>
+          <h3>Aportación para la luna de miel</h3>
+          <p class="tienda">Transferencia bancaria</p>
+          <a class="boton secundario" href="#" target="_blank" rel="noopener">Ver datos</a>
+          <label class="check"><input type="checkbox"> Ya aporté</label>
+        </article>
+
+      </div>
+    </section>
+
+    <nav class="barra-volver">
+      <a href="index.html">← Volver a la invitación</a>
+    </nav>
+
+  </main>
+
+</body>
+</html>
