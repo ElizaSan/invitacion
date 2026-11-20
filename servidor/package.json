@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
 "scripts": {
-  "dev": "node --env-file=.env --watch server.js"
+  "dev": "node --env-file=.env --watch server.js",
+  "importar": "node --env-file=.env scripts/importar-invitados.js",
+  "enlaces": "node --env-file=.env scripts/listar-enlaces.js"
 },
   "keywords": [],
   "author": "",

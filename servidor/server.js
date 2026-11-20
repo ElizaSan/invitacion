@@ -12,22 +12,14 @@
 
 const path = require('node:path');
 const express = require('express');
-const { Pool } = require('pg');
+
+// Conexión a PostgreSQL (definida en db.js, compartida con los scripts).
+// Es un "pool": mantiene varias conexiones abiertas y las reutiliza,
+// mucho más rápido que abrir una conexión nueva en cada petición.
+const db = require('./db');
 
 const app = express();
 const PUERTO = process.env.PUERTO || 3000;
-
-// ---------- Conexión a PostgreSQL ----------
-// Un "pool" mantiene varias conexiones abiertas y las reutiliza:
-// mucho más rápido que abrir una conexión nueva en cada petición.
-// Los datos vienen del archivo .env (nunca se escriben en el código).
-const db = new Pool({
-  host: process.env.DB_HOST,
-  port: process.env.DB_PUERTO,
-  database: process.env.DB_NOMBRE,
-  user: process.env.DB_USUARIO,
-  password: process.env.DB_CONTRASENA,
-});
 
 // ---------- Middlewares ----------
 // Un middleware es una función que procesa cada petición antes de
